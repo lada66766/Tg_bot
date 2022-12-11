@@ -7,9 +7,10 @@ bot = telebot.TeleBot("5807155548:AAH54VFkBB43je4jPdgVI68ppISZprU0MIg")
 
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
-  markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
-  item1=types.KeyboardButton("Картинка")
-  markup.add(item1)
+    bot.send_message(m.chat.id, 'Я на связи. Напиши мне что-нибудь )')
+    markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
+    item1=types.KeyboardButton("Картинка")
+    markup.add(item1)
 
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
