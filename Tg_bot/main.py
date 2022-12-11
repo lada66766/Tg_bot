@@ -1,7 +1,7 @@
 import telebot
-from telebot import types
-import os
 import random
+import os
+from telebot import types
 
 bot = telebot.TeleBot("5807155548:AAH54VFkBB43je4jPdgVI68ppISZprU0MIg")
 def start(m, res=False):
