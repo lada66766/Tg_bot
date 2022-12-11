@@ -4,6 +4,8 @@ import os
 from telebot import types
 
 bot = telebot.TeleBot("5807155548:AAH54VFkBB43je4jPdgVI68ppISZprU0MIg")
+
+@bot.message_handler(commands=["start"])
 def start(m, res=False):
   markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
   item1=types.KeyboardButton("Картинка")
