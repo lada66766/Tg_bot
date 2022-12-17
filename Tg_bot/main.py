@@ -29,8 +29,9 @@ def handle_text(message):
     if message.text.strip() == 'GIF':
         document = open('gif/' + random.choice(os.listdir('gif')), 'rb')
         audio = open('audio/' + random.choice(os.listdir('audio')), 'rb')
-        bot.send_photo(message.from_user.id, document)
+        bot.send_document(message.from_user.id, document)
         bot.send_audio(message.from_user.id, audio)
+
 
 
 
